@@ -43,4 +43,7 @@ test('should complete a purchase successfully @e2e @smoke', async ({authenticate
     // Order Confirmation
     await expect(checkoutCompletePage.pageTitle).toBeVisible();
     await expect(checkoutCompletePage.confirmationMessage).toBeVisible();
+    const download = await checkoutCompletePage.downloadOrder();
+    expect(await download.failure()).toBeNull();
+    expect(download.suggestedFilename()).toMatch(/^swag-labs-order-\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2}/);
 });
