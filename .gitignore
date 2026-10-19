@@ -5,6 +5,7 @@ playwright/.cache/
 playwright/.auth/
 allure-results/
 allure-report/
+.playwright-mcp/
 
 .env
 .env.*
