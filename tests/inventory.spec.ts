@@ -1,8 +1,6 @@
 import { test, expect } from '../fixtures/auth-fixture.js';
-import { LoginPage } from '../pages/login-page.js';
 import { InventoryPage } from '../pages/inventory-page.js';
 import { products } from '../test-data/product-data.js';
-import { loginTestCases } from '../test-data/login-data.js';
 
 test.describe('SauceDemo Inventory', () => {
     

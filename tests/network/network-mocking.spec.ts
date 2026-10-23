@@ -1,6 +1,4 @@
 import { test, expect } from '@playwright/test';
-import { request } from 'node:http';
-import { stringify } from 'node:querystring';
 
 test.describe('Network Interception Tests', () => {
 

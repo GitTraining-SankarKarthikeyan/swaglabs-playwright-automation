@@ -1,6 +1,4 @@
 import { test as base, expect, type Page } from '@playwright/test';
-import { LoginPage } from '../pages/login-page.js';
-import { loginTestCases } from '../test-data/login-data.js';
 
 type AuthFixtures = {
     authenticatedPage: Page;
